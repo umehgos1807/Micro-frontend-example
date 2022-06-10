@@ -1,5 +1,12 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "cart": "apps/cart",
+    "cart-e2e": "apps/cart-e2e",
+    "host-app": "apps/host-app",
+    "host-app-e2e": "apps/host-app-e2e",
+    "product-list": "apps/product-list",
+    "product-list-e2e": "apps/product-list-e2e"
+  }
 }
