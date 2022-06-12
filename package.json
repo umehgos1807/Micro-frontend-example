@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.18.1",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-router-dom": "6.3.0",

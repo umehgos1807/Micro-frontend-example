@@ -9,7 +9,7 @@ module.exports = (config, context) => {
     devServer: {
       ...config.devServer,
       proxy: {
-        'http://localhost:3001': 'http://localhost:3001',
+        'http://localhost:3003': 'http://localhost:3003',
         'http://localhost:3002': 'http://localhost:3002',
       },
     },
@@ -18,7 +18,7 @@ module.exports = (config, context) => {
       new ModuleFederationPlugin({
         name: 'host',
         remotes: {
-          cart: 'cart@http://localhost:3001/remoteEntry.js',
+          cart: 'cart@http://localhost:3003/remoteEntry.js',
           productList: 'productList@http://localhost:3002/remoteEntry.js',
         },
         shared: {
